@@ -4,10 +4,6 @@ import { Inter } from 'next/font/google'
 import { ToastProvider } from '@/components/providers/toaster-provider'
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
 } from '@clerk/nextjs'
 
 
