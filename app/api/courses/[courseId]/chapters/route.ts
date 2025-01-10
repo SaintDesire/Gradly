@@ -9,7 +9,7 @@ export async function POST(
     try {
         const { userId } = await auth();
         const { title } = await req.json()
-        const courseId = await params.courseId
+        const courseId = await params.courseId.replace(/[{}]/g, "");
 
         if (!userId) {
             return new NextResponse("Unauthorized", {status: 401});

@@ -8,7 +8,7 @@ export async function PUT(
 ) {
     try {
         const { userId } = await auth()
-        const courseId = await params.courseId
+        const courseId = await params.courseId.replace(/[{}]/g, "");
 
         if (!userId) {
             return new NextResponse("Unauthorized", { status: 401 });

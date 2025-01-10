@@ -2,9 +2,10 @@
 const nextConfig = {
     images: {
         domains: [
-            "utfs.io"
+            "utfs.io",
+            "z3qgu6k5na.ufs.sh"
         ]
     }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
